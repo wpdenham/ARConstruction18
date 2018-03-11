@@ -1,10 +1,117 @@
+/*Site Color Pallete:
+	white: #fff;
+	light grey: #e3e3e3;
+	dark grey: #555;
+	green: #91c22b ;
+	headers: #555;
+	para: #fff;
+*/
+
+body, html {
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+	font-family: 'rawline', sans-serif;
+	overflow-x: hidden;
+}
+
+.navbar {
+	background-color: rgba(85,85,85, .85);
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+
+.navbar-brand img {
+	float: right;
+ 	height: 3.5em;
+}
+
+.navbar-toggler {
+	display: none;
+}
+
+.nav-item {
+	padding-right: 3.5em;
+}
+
+.nav-link {
+	font-weight: 500;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.nav-link:hover {
+	color: #91c22b;
+}
 
 #carousel-main {
-  height: 500px;
-  overflow-y: hidden;
-
+  	height: 700px;
+  	overflow-y: hidden;
 }
 
 #carousel-main img {
   width: 100%;
+}
+
+.cta {
+	height: 7em;
+	background-color: #555; 
+}
+
+.cta span {
+	color: #91c22b ;
+}
+
+.cta h4 {
+	font-size: 3em;
+	color: #fff;
+	font-weight: 600;
+
+}
+
+.mission {
+	height: 40em;
+	background-color: #91c22b;
+}
+
+.catalog {
+	background-color: rgba(85,85,85,.95);
+	background-blend-mode: multiply;
+	min-height: 45em;
+	background-image: url(../assets/blackbird.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.services {
+	height: 100em;
+	background-color: #e3e3e3;
+}
+
+.contact {
+	background-color: rgba(85,85,85,.85);
+	background-blend-mode: multiply;
+	min-height: 40em;
+	background-image: url(../assets/blackbird.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+footer {
+	height: 6em;
+	background-color: #555; 
+}
+
+footer img{
+	height: 4em;
+}
+
+footer p {
+	color: #fff;
+	font-size: 1.4em;
+	float: right;
 }
