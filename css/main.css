@@ -13,6 +13,7 @@ body, html {
 	font-size: 10px;
 	font-family: 'rawline', sans-serif;
 	overflow-x: hidden;
+	box-sizing: border-box;
 }
 
 .navbar {
@@ -23,7 +24,7 @@ body, html {
 
 .navbar-brand img {
 	float: right;
- 	height: 3.5em;
+ 	height: 3.5rem;
 }
 
 .navbar-toggler {
@@ -31,12 +32,12 @@ body, html {
 }
 
 .nav-item {
-	padding-right: 3.5em;
+	padding-right: 3.5rem;
 }
 
 .nav-link {
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	color: #fff;
 }
 
@@ -44,18 +45,24 @@ body, html {
 	color: #91c22b;
 }
 
+
 #carousel-main {
-  	height: 700px;
+  	height: 70rem;
   	overflow-y: hidden;
 }
 
-#carousel-main img {
-  width: 100%;
-}
+
+/*#carousel-main img {
+  	width: 100%;
+  	background-color: rgba(85,85,85, .6);
+  	background-blend-mode: multiply;
+}*/
 
 .cta {
-	height: 7em;
+	height: auto;
 	background-color: #555; 
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .cta span {
@@ -63,38 +70,124 @@ body, html {
 }
 
 .cta h4 {
-	font-size: 3em;
+	font-size: 3rem;
 	color: #fff;
 	font-weight: 600;
 
 }
 
 .mission {
-	height: 40em;
+	height: auto;
 	background-color: #91c22b;
+	background-image: url(../assets/missionpattern.png);
+	background-position: center;
+	background-blend-mode: multiply;
+	padding-top: 7.4rem;
+	padding-bottom: 7.4rem;
+}
+
+.missionmain {
+	text-align: center;
+	height: auto;
+	/*width: 50%;*/
+	border: 4px solid #555;
+	border-radius: .25rem;
+	
+	padding-bottom: 3rem;
+}
+
+.missionmain h3 {
+	display: inline-block;
+	margin-top: -3rem;
+	font-size: 4rem;
+	font-weight: 700;
+	color: #555;
+	background-color: #91c22b;
+	text-align: center;
+	padding-right: .5rem;
+	padding-left: .5rem;
+}
+
+.missionmain p {
+	font-size: 2.75rem;
+	line-height: 5rem;
+	color: #fff;
+	padding: .75rem 6.5rem 0 6.5rem;
 }
 
 .catalog {
 	background-color: rgba(85,85,85,.95);
 	background-blend-mode: multiply;
-	min-height: 45em;
-	background-image: url(../assets/blackbird.jpg);
+	height: 40rem;
+	background-image: url(../assets/catalogback.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	text-align: center;
+}
+
+.catalog img {
+	height: 95%;
+	padding-top: 4.5rem;
+	cursor: pointer;
+	float: left;
+}
+
+.catalog p {
+	font-size: 4rem;
+	font-weight: 600;
+	color: #fff;
+	float: right;
+}
+
+.catalog span {
+	color: #91c22b;
+	padding-right: .25rem;
 }
 
 .services {
-	height: 100em;
+	height: 100rem;
 	background-color: #e3e3e3;
+	background-image: url(../assets/servicespattern.png);
+	background-position: center ;
+	background-blend-mode: multiply;
+	padding-top: 7.4rem;
+	padding-bottom: 5.4rem;
+}
+
+.servicesmain {
+	text-align: center;
+	height: auto;
+	border: 4px solid #91c22b;
+	border-radius: .25rem;
+	padding-bottom: 3rem;
+}
+
+.servicesmain h3 {
+	display: inline-block;
+	margin-top: -3rem;
+	font-size: 4rem;
+	font-weight: 700;
+	color: #91c22b;
+	background-color: #e3e3e3;
+	text-align: center;
+	padding-right: .5rem;
+	padding-left: .5rem;
+}
+
+.servicesmain p {
+	font-size: 2.75rem;
+	line-height: 5rem;
+	color: #555;
+	padding: .75rem 6.5rem 0 6.5rem;
 }
 
 .contact {
 	background-color: rgba(85,85,85,.85);
 	background-blend-mode: multiply;
-	min-height: 40em;
-	background-image: url(../assets/blackbird.jpg);
+	min-height: 40rem;
+	background-image: url(../assets/contactback.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -102,16 +195,16 @@ body, html {
 }
 
 footer {
-	height: 6em;
+	height: 6rem;
 	background-color: #555; 
 }
 
 footer img{
-	height: 4em;
+	height: 4rem;
 }
 
 footer p {
 	color: #fff;
-	font-size: 1.4em;
+	font-size: 1.4rem;
 	float: right;
 }
