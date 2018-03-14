@@ -4,32 +4,38 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>AR Construction</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONT AWESOME SCRIPT -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- BOOTSTRAP STYLE SHEET -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
+    <!-- DEVELOPER STLYE SHEET -->
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
   <header>
       <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
-          	<img src="../assets/logonav.png" alt="AR Construction Logo">
-          </a>
+          
+            <a class="navbar-brand" href="#">
+              <img src="../assets/logonav.png" alt="AR Construction Logo">
+            </a>
+          <div class="logo"></div>
+          
           <!-- <button class="navbar-toggler lt-color" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Mission<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#missionscroll">Mission<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="#servicescroll">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contactscroll">Contact</a>
                 </li>
               </ul>
             </div>
@@ -62,21 +68,23 @@
 
     </div>
   </div>
-  <div class="row mission">
+  <div id="missionscroll" class="row mission">
   	<div class="container">
   		<div class="missionmain">
-  			<h3 class="text-center">MISSION</h3>
+  			<h3  class="text-center">MISSION</h3>
 		  	<p class="text-center">AR Construction was founded on the principles of providing quality products and exceptional workmanship at affordable prices. We treat every customer with dignity and respect at all times</p>
 	  	</div>	
   	</div>
   </div>
-  <div class="row catalog">
+  <div  class="row catalog">
   	<div class="container">
-  		<a  href="../assets/Catalog2018Web.pdf" target="_blank"><img src="../assets/catalog.png" alt="View Our New Catalog"></a>
-  		<p><span>&lt&lt</span>VIEW OUR NEW CATALOG</p>
+      <div class="catalogcenter">
+        <a  href="../assets/Catalog2018Web.pdf" target="_blank"><img src="../assets/catalog.png" alt="View Our New Catalog"></a>
+        <p><span>&lt&lt</span>VIEW OUR NEW CATALOG</p>
+      </div>
   	</div>
   </div>
-  <div class="row services">
+  <div id="servicescroll" class="row services">
   	<div class="container">
   		<div class="servicesmain">
   			<h3 class="text-center">SERVICES</h3>
@@ -119,12 +127,12 @@
   		</div>
   	</div>
   </div>
-  <div class="row contact text-center">
-  	<div class="container">
+  <div id="contactscroll" class="row contact text-center">
+  	<div class="container contactinfo">
   		<h2><span>&gt&gt</span> LET'S START YOUR PROJECT <span>&lt&lt</span></h2>
-  		<img src="" alt="">
+  		<i class="fas fa-phone-square fa-5x"></i>
   		<p class="phone">708.420.7669</p>
-  		<img src="" alt="">
+  		<i class="fas fa-envelope fa-5x"></i>
   		<p class="email">INFO@ARCONSTRUCTIONIL.COM</p>
   	</div>
   </div>

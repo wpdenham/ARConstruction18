@@ -16,15 +16,69 @@ body, html {
 	box-sizing: border-box;
 }
 
+/*BEGIN CUSTOM SCROLLBAR STYLING*/
+
+/* width */
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #e3e3e3; 
+    border-radius: 55px;
+    
+}
+
+body::-webkit-scrollbar-button {
+	display: none;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #91c22b; 
+    border-radius: 55px;
+    
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #91c22b; 
+    border-radius: 55px;
+}
+
+body::-webkit-scrollbar-corner {
+    background: #91c22b; 
+    border-radius: 55px;
+}
+
+/*BEGIN NAV SECTION*/
+
 .navbar {
 	background-color: rgba(85,85,85, .85);
 	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
+.logo::before {
+	content: '';
+	background-color: #91c22b;
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	top: 0;
+	left: -1.1rem;
+	transform: skew(-20deg);
+	z-index: 2;
+}
+
+
+.navbar-brand {
+	z-index: 3;
+}
 
 .navbar-brand img {
 	float: right;
- 	height: 3.5rem;
+ 	height: 4.5rem;
 }
 
 .navbar-toggler {
@@ -45,18 +99,15 @@ body, html {
 	color: #91c22b;
 }
 
+/*BEGIN CAROUSEL SECTION*/
+
 
 #carousel-main {
   	height: 70rem;
   	overflow-y: hidden;
 }
 
-
-/*#carousel-main img {
-  	width: 100%;
-  	background-color: rgba(85,85,85, .6);
-  	background-blend-mode: multiply;
-}*/
+/*BEGIN PHONE INFO CTA SECTION*/
 
 .cta {
 	height: auto;
@@ -75,6 +126,8 @@ body, html {
 	font-weight: 600;
 
 }
+
+/*BEGIN MISSION SECTION*/
 
 .mission {
 	height: auto;
@@ -115,6 +168,8 @@ body, html {
 	padding: .75rem 6.5rem 0 6.5rem;
 }
 
+/*BEGIN CATALOG CTA SECTION*/
+
 .catalog {
 	background-color: rgba(85,85,85,.95);
 	background-blend-mode: multiply;
@@ -125,19 +180,34 @@ body, html {
 	background-position: center;
 	background-attachment: fixed;
 	text-align: center;
+	position: relative;
+	border: 3px solid pink;
+}
+
+.catalogcenter {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	border:3px solid purple;
+	position: relative;
 }
 
 .catalog img {
-	height: 95%;
-	padding-top: 4.5rem;
+	max-width: 35%;
+	height: auto;
 	cursor: pointer;
 	float: left;
+	border: 1px solid red;
 }
 
 .catalog p {
+	width: 30%;
 	font-size: 4rem;
 	font-weight: 600;
 	color: #fff;
+	position: absolute;
+	top: 40%;
+	right: 0;
 	float: right;
 }
 
@@ -145,6 +215,8 @@ body, html {
 	color: #91c22b;
 	padding-right: .25rem;
 }
+
+/*BEGIN SERVICES SECTION*/
 
 .services {
 	height: 100rem;
@@ -183,6 +255,8 @@ body, html {
 	padding: .75rem 6.5rem 0 6.5rem;
 }
 
+/*BEGIN CONTACT SECTION*/
+
 .contact {
 	background-color: rgba(85,85,85,.85);
 	background-blend-mode: multiply;
@@ -192,18 +266,53 @@ body, html {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	position: relative;
 }
+
+.contactinfo {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.contactinfo span {
+	color: #91c22b;
+}
+
+.contactinfo h2 {
+	font-size: 4rem;
+	color: #fff;
+	font-weight: 600;
+	padding-bottom: 1rem;
+}
+
+.contactinfo p {
+	font-size: 3rem;
+	color: #fff;
+	font-weight: 600;
+}
+
+.fa-5x {
+	color: #91c22b;
+}
+
+/*BEGIN FOOTER SECTION*/
 
 footer {
 	height: 6rem;
 	background-color: #555; 
+	position: relative;
 }
 
 footer img{
 	height: 4rem;
+	position: absolute;
+	top: 1rem;
 }
 
 footer p {
+	padding-top: 2.5rem;
 	color: #fff;
 	font-size: 1.4rem;
 	float: right;
