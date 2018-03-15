@@ -173,7 +173,7 @@ body::-webkit-scrollbar-corner {
 .catalog {
 	background-color: rgba(85,85,85,.95);
 	background-blend-mode: multiply;
-	height: 40rem;
+	min-height: 40rem;
 	background-image: url(../assets/catalogback.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -181,34 +181,36 @@ body::-webkit-scrollbar-corner {
 	background-attachment: fixed;
 	text-align: center;
 	position: relative;
-	border: 3px solid pink;
+	margin: 0 auto;
 }
 
 .catalogcenter {
-	width: 90%;
-	height: 100%;
+	min-height: 100%;
 	margin: 0 auto;
-	border:3px solid purple;
 	position: relative;
 }
 
-.catalog img {
-	max-width: 35%;
-	height: auto;
+.catalog a {
+	max-width: 50%;
+	min-height: 40rem;
 	cursor: pointer;
 	float: left;
-	border: 1px solid red;
 }
 
-.catalog p {
-	width: 30%;
+.catalog a img {
+	max-width: 100%;
+	padding: 4rem;
+}
+
+.catalogcenter p {
+	max-width: 50%;
 	font-size: 4rem;
 	font-weight: 600;
 	color: #fff;
 	position: absolute;
-	top: 40%;
-	right: 0;
-	float: right;
+	top: 45%;
+	right: 2%;
+	margin-bottom: 0;
 }
 
 .catalog span {
@@ -219,7 +221,7 @@ body::-webkit-scrollbar-corner {
 /*BEGIN SERVICES SECTION*/
 
 .services {
-	height: 100rem;
+	height: auto;
 	background-color: #e3e3e3;
 	background-image: url(../assets/servicespattern.png);
 	background-position: center ;
@@ -254,6 +256,38 @@ body::-webkit-scrollbar-corner {
 	color: #555;
 	padding: .75rem 6.5rem 0 6.5rem;
 }
+
+.servicecolumn {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.servicelist ul{
+	width: 100%;
+	list-style-type: none;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+
+.servicelist li {
+	text-align: center;
+	padding-bottom: 1.5rem;
+}
+
+.servicelist img {
+	display: block;
+	margin: 0 auto;
+	height: 90px;
+}
+
+.servicelist h4 {
+	display: block;
+	font-size: 2.5rem;
+	padding-top: 2rem;
+}
+
 
 /*BEGIN CONTACT SECTION*/
 
