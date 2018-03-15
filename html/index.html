@@ -29,13 +29,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" id="mission" href="#missionscroll">Mission<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" id="mission" href="#missionscroll" onclick="scrollToMission()">Mission<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="service" href="#servicescroll">Services</a>
+                  <a class="nav-link" id="service" href="#servicescroll" onclick="scrollToService()">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="contact" href="#contactscroll">Contact</a>
+                  <a class="nav-link" id="contact" href="#contactscroll" onclick="scrollToContact()">Contact</a>
                 </li>
               </ul>
             </div>
@@ -140,7 +140,7 @@
   	</div>
   </div>
   <footer>
-  	<div class="row">
+  	<div class="row" id="footer">
   		<div class="container">
   			<img src="../assets/logofooter.png" alt="">
   			<p class="copyright">COPYRIGHT 2018</p>
@@ -148,18 +148,36 @@
   	</div>
   </footer>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script
+ src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+ </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script>
-   $('#service').on('click', function(e) {
-     e.preventDefault();
-     var target = $(this).attr('href');
-     $('html, body').animate({
-       scrollTop: $('#servicescroll').offset().top
-     }, 2000);
-  });
+  function scrollToMission(){
+    $('html, body').animate({
+      scrollTop: ($('#missionscroll').offset().top)
+    },1000);
+  }
+
+  function scrollToService(){
+    $('html, body').animate({
+      scrollTop: ($('#servicescroll').offset().top)
+    },1000);
+  }
+
+  function scrollToContact(){
+    $('html, body').animate({
+      scrollTop: ($('#contactscroll').offset().top)
+    },1000);
+  }
+  
+   
+  
 </script>
   </body>
 </html>
