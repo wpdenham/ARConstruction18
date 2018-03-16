@@ -136,6 +136,9 @@ body::-webkit-scrollbar-corner {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
+	-webkit-background-blend-mode: multiply;
+	-moz-background-blend-mode: multiply;
+	-o-background-blend-mode: multiply;
 	padding-top: 7.4rem;
 	padding-bottom: 7.4rem;
 }
@@ -143,10 +146,8 @@ body::-webkit-scrollbar-corner {
 .missionmain {
 	text-align: center;
 	height: auto;
-	/*width: 50%;*/
 	border: 4px solid #555;
 	border-radius: .25rem;
-	
 	padding-bottom: 3rem;
 }
 
