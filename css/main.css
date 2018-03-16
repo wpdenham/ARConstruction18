@@ -377,8 +377,8 @@ body::-webkit-scrollbar-corner {
 }
 
 .carousel-item img {
-	max-width: 170%;
-	background-position: left center;
+	max-width: 150%;
+	background-position: right center;
 	background-size: cover;
 }
 
@@ -528,7 +528,16 @@ body::-webkit-scrollbar-corner {
 
 @media screen and (min-width: 482px) and (max-width: 760px){
 
+#carousel-main {
+	margin-top: 6rem;
+  	height: auto;
+}
 
+.carousel-item img {
+	max-width: 150%;
+	background-position: right center;
+	background-size: cover;
+}
 
 /*BEGIN PHONE INFO CTA SECTION*/
 
@@ -671,6 +680,17 @@ body::-webkit-scrollbar-corner {
 /*------------------------------------------*/
 
 @media screen and (min-width: 761px) and (max-width: 991px){
+
+#carousel-main {
+	margin-top: 6rem;
+  	height: auto;
+}
+
+.carousel-item img {
+	max-width: 150%;
+	background-position: right center;
+	background-size: cover;
+}
 
 /*BEGIN CATALOG CTA SECTION*/
 
