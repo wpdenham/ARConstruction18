@@ -14,6 +14,7 @@ body, html {
 	font-family: 'rawline', sans-serif;
 	overflow-x: hidden;
 	box-sizing: border-box;
+	background-color: #000;
 }
 
 /*BEGIN CUSTOM SCROLLBAR STYLING*/
@@ -103,8 +104,14 @@ body::-webkit-scrollbar-corner {
 
 
 #carousel-main {
-  	height: 70rem;
+  	height: auto;
   	overflow-y: hidden;
+}
+
+.carousel-item img {
+	max-width: 100%;
+	background-position: center;
+	background-size: contain;
 }
 
 /*BEGIN PHONE INFO CTA SECTION*/
@@ -364,6 +371,17 @@ body::-webkit-scrollbar-corner {
 	background-color: #91c22b;
 }
 
+#carousel-main {
+	margin-top: 6rem;
+  	height: auto;
+}
+
+.carousel-item img {
+	max-width: 170%;
+	background-position: left center;
+	background-size: cover;
+}
+
 /*BEGIN PHONE INFO CTA SECTION*/
 
 
@@ -372,7 +390,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .cta h4 {
-	font-size: 2.45rem;
+	font-size: 2rem;
 }
 
 /*BEGIN MISSION SECTION*/
@@ -460,14 +478,14 @@ body::-webkit-scrollbar-corner {
 }
 
 .contactinfo h2 {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	color: #fff;
 	font-weight: 600;
 	padding-bottom: 1rem;
 }
 
 .contactinfo p {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #fff;
 	font-weight: 600;
 }

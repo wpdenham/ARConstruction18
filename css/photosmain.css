@@ -5,4 +5,53 @@ body, html {
 	font-family: 'rawline', sans-serif;
 	overflow-x: hidden;
 	box-sizing: border-box;
+	background-color: white;
+}
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+	padding-top: 2rem;
+}
+
+.container img {
+	list-style-type: none;
+	float: left;
+	padding: 1rem;
+	border-radius: 2rem;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.container img:hover {
+	opacity: 0.5;
+}
+
+.zoom {
+	display: none;
+	position: fixed;
+	padding-top: 3rem;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.85);
+}
+
+.zoom-content {
+	display: block;
+	width: 75%;
+}
+
+.close {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	color: #fff;
+	font-size: 4rem;
+	transition: .5s;
+}
+
+.close:hover {
+	color: red;
 }
