@@ -333,7 +333,151 @@ body::-webkit-scrollbar-corner {
 
 /*BEGIN FOOTER SECTION*/
 
-footer {
+#footer {
+	height: 6rem;
+	background-color: #555; 
+	position: relative;
+}
+
+#footer img{
+	height: 4rem;
+	position: absolute;
+	top: 1rem;
+}
+
+#footer p {
+	padding-top: 2.5rem;
+	color: #fff;
+	font-size: 1.4rem;
+	float: right;
+}
+
+/*---------------------------------------*/
+
+/*BEGIN MEDIA QUERY STYLES*/
+
+@media screen and (max-width: 460px){
+
+.navbar {
+	background-color: #91c22b;
+}
+
+/*BEGIN PHONE INFO CTA SECTION*/
+
+
+.cta span {
+	display: none;
+}
+
+.cta h4 {
+	font-size: 2rem;
+}
+
+/*BEGIN MISSION SECTION*/
+
+.mission {
+	padding: 6rem 2rem 6rem 2rem;
+}
+
+.missionmain {
+	padding-bottom: 3rem;
+}
+
+.missionmain p {
+	font-size: 1.75rem;
+	line-height: 3rem;
+	padding: .75rem 3.5rem 0 3.5rem;
+}
+
+/*BEGIN CATALOG CTA SECTION*/
+
+.catalogmain {
+	margin-bottom: 4rem;
+}
+
+.catalogcenter {
+	width: 100%;
+	/*margin-bottom: 2rem;*/
+}
+
+.catalog a {
+	min-height: 100%;
+	min-width: 100%;
+	cursor: pointer;
+	padding-top: 1rem;
+
+}
+
+.catalog a img {
+	max-width: 90%;
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+
+.catalogcenter p {
+	min-width: 100%;
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #fff;
+	top: 95%;
+	right: 0;
+	
+}
+
+.catalog span {
+	display: none;
+}
+
+/*BEGIN SERVICES SECTION*/
+
+
+.services {
+	padding: 6rem 2rem 6rem 2rem
+}
+
+.servicesmain {
+	padding-bottom: 3rem;
+}
+
+.servicesmain p {
+	font-size: 1.75rem;
+	line-height: 3rem;
+	padding: .75rem 3.5rem 0 3.5rem;
+}
+
+/*BEGIN CONTACT SECTION*/
+
+.contactinfo {
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.contactinfo span {
+	display: none;
+}
+
+.contactinfo h2 {
+	font-size: 3.5rem;
+	color: #fff;
+	font-weight: 600;
+	padding-bottom: 1rem;
+}
+
+.contactinfo p {
+	font-size: 2.5rem;
+	color: #fff;
+	font-weight: 600;
+}
+
+.fa-5x {
+	color: #91c22b;
+}
+
+/*BEGIN FOOTER SECTION*/
+
+/*footer {
 	height: 6rem;
 	background-color: #555; 
 	position: relative;
@@ -350,4 +494,32 @@ footer p {
 	color: #fff;
 	font-size: 1.4rem;
 	float: right;
+}*/
+
+#footer {
+	height: auto;
+	margin: 0 auto;
 }
+
+#footer img{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	
+	height: 4rem;
+	margin-top: 1rem;
+}
+
+#footer p {
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4rem;
+	margin-top: 3.5rem;
+	float: none;
+}
+
+}
+/*END MEDIA QUERY STYLING
