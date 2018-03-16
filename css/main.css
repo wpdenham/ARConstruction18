@@ -14,7 +14,7 @@ body, html {
 	font-family: 'rawline', sans-serif;
 	overflow-x: hidden;
 	box-sizing: border-box;
-	background-color: #000;
+	background-color: #fff;
 }
 
 /*BEGIN CUSTOM SCROLLBAR STYLING*/
@@ -451,7 +451,7 @@ body::-webkit-scrollbar-corner {
 /*BEGIN SERVICES SECTION*/
 
 .services {
-	padding: 6rem 1rem 6rem 1rem
+	padding: 6rem 1rem 6rem 1rem;
 }
 
 .servicesmain {
@@ -534,7 +534,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .carousel-item img {
-	max-width: 150%;
+	max-width: 170%;
 	background-position: right center;
 	background-size: cover;
 }
@@ -681,16 +681,7 @@ body::-webkit-scrollbar-corner {
 
 @media screen and (min-width: 761px) and (max-width: 991px){
 
-#carousel-main {
-	margin-top: 6rem;
-  	height: auto;
-}
 
-.carousel-item img {
-	max-width: 150%;
-	background-position: right center;
-	background-size: cover;
-}
 
 /*BEGIN CATALOG CTA SECTION*/
 
