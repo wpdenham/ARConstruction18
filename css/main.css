@@ -5,7 +5,7 @@
 	green: #91c22b ;
 	headers: #555;
 	para: #fff;
-*/
+	*/
 
 body, html {
 	padding: 0;
@@ -411,6 +411,10 @@ body::-webkit-scrollbar-corner {
 
 /*BEGIN CATALOG CTA SECTION*/
 
+.catalog {
+	background-attachment: scroll;
+}
+
 .catalogmain {
 	margin-bottom: 4rem;
 }
@@ -465,6 +469,11 @@ body::-webkit-scrollbar-corner {
 }
 
 /*BEGIN CONTACT SECTION*/
+
+.contact {
+	background-attachment: scroll;
+}
+
 
 .contactinfo {
 	position: absolute;
@@ -563,6 +572,10 @@ body::-webkit-scrollbar-corner {
 
 /*BEGIN CATALOG CTA SECTION*/
 
+.catalog {
+	background-attachment: scroll;
+}
+
 .catalogmain {
 	margin-bottom: 4rem;
 }
@@ -618,6 +631,10 @@ body::-webkit-scrollbar-corner {
 }
 
 /*BEGIN CONTACT SECTION*/
+
+.contact {
+	background-attachment: scroll;
+}
 
 .contactinfo {
 	position: absolute;
@@ -685,6 +702,10 @@ body::-webkit-scrollbar-corner {
 
 /*BEGIN CATALOG CTA SECTION*/
 
+.catalog {
+	background-attachment: scroll;
+}
+
 .catalogmain {
 	margin-bottom: 2rem;
 }
@@ -720,11 +741,20 @@ body::-webkit-scrollbar-corner {
 	padding-right: .25rem;
 }
 
+.contact {
+	background-attachment: scroll;
+}
+
 }
 
 /*---------------------------------------*/
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
+
+.catalog {
+	
+	background-attachment: scroll;
+}
 
 .catalogcenter p {
 	max-width: 40%;
@@ -734,6 +764,10 @@ body::-webkit-scrollbar-corner {
 	top: 35%;
 	right: 6%;
 	text-align: right;
+}
+
+.contact {
+	background-attachment: scroll;
 }
 
 }

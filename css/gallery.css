@@ -1,12 +1,10 @@
 body,html {
   padding: 0;
   margin: 0;
-  /*background-color: #555;*/
-  background: rgb(76,76,76); /* Old browsers */
-background: -webkit-linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 42%, rgb(44,44,44) 58%, rgb(17,17,17) 75%, rgb(28,28,28) 89%, rgb(19,19,19) 100%);
-background: -o-linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 42%, rgb(44,44,44) 58%, rgb(17,17,17) 75%, rgb(28,28,28) 89%, rgb(19,19,19) 100%);
-background: linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 42%, rgb(44,44,44) 58%, rgb(17,17,17) 75%, rgb(28,28,28) 89%, rgb(19,19,19) 100%);
-
+  background: rgb(76,76,76);
+  background: -webkit-linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 42%, rgb(44,44,44) 58%, rgb(17,17,17) 75%, rgb(28,28,28) 89%, rgb(19,19,19) 100%);
+  background: -o-linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 42%, rgb(44,44,44) 58%, rgb(17,17,17) 75%, rgb(28,28,28) 89%, rgb(19,19,19) 100%);
+  background: linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 42%, rgb(44,44,44) 58%, rgb(17,17,17) 75%, rgb(28,28,28) 89%, rgb(19,19,19) 100%);
   box-sizing: border-box;
 }
 
@@ -24,7 +22,6 @@ background: linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 4
   height: 80px;
   margin: 0 auto;
   position: relative;
-
 }
 
 .headercontain img {
@@ -34,9 +31,10 @@ background: linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 4
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
+  margin: 0 auto;
 }
 
-.headercontain h4 {
+/*.headercontain h4 {
   float: right;
   margin: 0;
   position: absolute;
@@ -47,7 +45,8 @@ background: linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 4
   text-transform: uppercase;
   font-size: 24px;
   color: #555;
-}
+}*/
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -105,7 +104,7 @@ background: linear-gradient(rgb(76,76,76) 0%, rgb(89,89,89) 19%, rgb(71,71,71) 4
   width: 100vw;
   height: 100vh;
   z-index: 99;
-  display: block;
+  display: none;
   overflow: hidden;
   background-color: #000;
   background-color: rgba(0,0,0,.85);
