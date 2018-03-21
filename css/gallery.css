@@ -34,19 +34,6 @@ body,html {
   margin: 0 auto;
 }
 
-/*.headercontain h4 {
-  float: right;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  transform: translateY(-50%);
-  font-family: 'rawline', sans-serif;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #555;
-}*/
-
 .container {
   width: 90%;
   margin: 0 auto;
